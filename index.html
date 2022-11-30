@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
+    
     <header class="cuadrado">
+      <div class="container">
+    
       <img src="..\images\auris.png" width="120px" height="120px" alt="" class="Cuadradito"/>
 
-      <h1>MUSICARDIUM</h1>
-      <nav class="barrita">
-        <ul class="nav__list">
-      <li><a class="nav__link" href="index.html">Inicio</a></li>
-      <li>
-      <a class="nav__link" href="pages/perfil.html">Perfil</a>
-      </li> 
-      <li><a class="nav__link" href="pages/prodybeats.html">Productores musicales y Beatmakers</a></li>
-      <li><a class="nav__link" href="pages/cantyrap.html">Cantantes y Raperos</a></li>
-      <li><a class="nav__link" href="pages/audiovisual.html">Audiovisuales</a></li>
-      
+      <h1 class="animate__animated animate__backInRight">MUSICARDIUM</h1>
+  
+        <ul class="navFlex">
+      <li><a class="navFlex_item1" href="../index.html">Inicio</a></li>
+      <li><a class="navFlex_item2" href="pages/perfil.html">Perfil</a></li> 
+      <li><a class="navFlex_item3" href="pages/prodybeats.html">Productores musicales y Beatmakers</a></li>
+      <li><a class="navFlex_item4" href="pages/cantyrap.html">Cantantes y Raperos</a></li>
+      <li><a class="navFlex_item5" href="pages/audiovisual.html">Audiovisuales</a></li>
       </ul>
-    </nav>
+  </div>
       </header>
       <section>
       <article>
@@ -31,12 +35,8 @@
         <legend>Login</legend>
         <label for="Usuario">Usuario:</label>
         <input type="text" name="usuario" id="Usuario" />
-        <br />
-        <br>
         <label for="Password">Password:</label>
         <input type="text" name="password" id="Password" />
-        <br />
-        <br />
         <div>
           <legend>¿Qué tipo de Artista sos?</legend>
           <label for="">Beatmaker</label>
@@ -49,7 +49,6 @@
           <input type="radio">
           <label for="">Productor musical</label>
           <input type="radio" />
-          <br />
           <br />
           
 
@@ -74,23 +73,23 @@
     <div>
         <h2>Ultimos Lanzamientos</h2>
       </div>
-      <audio controls src="mp3/careless.mp3"></audio>
-      <br>
-      <br>
-      <audio controls src="mp3/uh3.mp3"></audio>
-      <br>
-      <br>
-      <audio controls src="mp3/careless.mp3"></audio>
-      <br>
-      <br>
-      <audio controls src="mp3/uh2.mp3"></audio>
-    <br>
-  
-      <br> 
-      <audio controls src="mp3/uh.mp3"></audio>
-  <div class="col">
-        
-    </div>
+      <div><h3>Artista 1</h3></div>
+<iframe width="128" height="128"> </iframe>
+<audio controls src="../mp3/careless.mp3"></audio>
+<div class="data">datadefault de artista</div>   
+<div><h3>Artista 2</h3></div>
+<!-- el frame representaría la imagen predeterminada del usuario-->
+    <iframe width="128" height="128"> </iframe>
+    <audio controls src="../mp3/uh.mp3"></audio>
+    <div class="data1">datadefault de artista</div>
+    <div><h3>Artista 3</h3></div>
+    <iframe width="128" height="128"> </iframe>
+    <audio controls src="../mp3/uh2.mp3"></audio>
+    <div class="data2">datadefault de artista</div>
+    <div><h3>Artista 4</h3></div>
+    <iframe width="128" height="128"> </iframe>
+    <audio controls src="../mp3/drive-trhu.mp3"></audio>
+    <div class="data2">datadefault de artista</div>
 
 </section>
 

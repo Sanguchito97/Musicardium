@@ -2,10 +2,12 @@
   padding: 50px 30px 20px 60px margin-top 20px;
 }
 
-html,
 body {
   background-color: rgb(189, 189, 189);
   background: linear-gradient(40deg, rgb(131, 236, 255), rgb(255, 174, 187));
+}
+h1{
+  font-size: 300%;
 }
 .cuadrado {
   margin-right: 0px;
@@ -19,6 +21,59 @@ body {
   top: 0px;
   position: sticky;
   z-index: 3;
+
+  @media (min-widht: 600px) {
+    font-size: 80px;
+  }
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: row;
+}
+.header {
+  padding: 0;
+  height: 120px;
+  @media {
+    max-width 992px
+  }
+}
+.navFlex {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+}
+.navFlex li {
+  list-style-type: none;
+  padding: 20px;
+  font-size: 20px;
+}
+.navFlex li a {
+  text-decoration: blink;
+  color: rgb(255, 255, 255);
+}
+.navFlex li a:hover {
+  color: rgba(177, 255, 255, 0.897);
+  background: linear-gradient(30deg, rgb(255, 174, 187), rgb(131, 236, 255));
+  margin-bottom: auto;
+  box-shadow: 2.5rem;
+}
+.navFlex__item1 {
+  order: 5;
+}
+.navFlex__item2 {
+  order: -1;
+}
+.navFlex__item3 {
+  order: -2;
+}
+.navFlex__item4 {
+  order: 0;
 }
 .barrita {
   display: flex;
@@ -84,17 +139,3 @@ h3 {
   margin-left: 0;
   position: relative;
 }
-
-/*ANIMACION*/
-
-@keyframes from-right {
-0%{
-  opacity: 0
-  transform: transaleX(80px)
-}
-100%{
-opacity: 1
-transform: transaleX(0px)
-}
-}
-
