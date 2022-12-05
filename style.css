@@ -19,15 +19,8 @@ h1{
   background-color: rgb(187, 187, 187);
   color: white;
   top: 0px;
-  position: sticky;
+  position: relative;
   z-index: 3;
-
-  @media (min-widht: 600px) {
-    font-size: 80px;
-  }
-  @media (max-width: 992px) {
-    font-size: 30px;
-  }
 }
 .container {
   display: flex;
@@ -138,4 +131,27 @@ h3 {
   padding: 0;
   margin-left: 0;
   position: relative;
+}
+@media (min-width: 768px) {
+  body {
+    grid-template-rows: auto 1.2fr auto;
+    grid-template-columns: 12rem 1fr;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "nav footer";
+  }
+}
+@media (min-widht: 600px) {
+  .cuadrado{
+    font-size: 50%;
+    line-height: 0.3;}
+}
+@media (max-width: 992px) {
+  .cuadrado {
+    font-size: 80%;
+    line-height: 0.5;
+    width: auto;
+    align-items: center;
+  } 
 }
